@@ -52,13 +52,11 @@ void DHT::resetTimer()
 
 float DHT::getHumidity()
 {
-  readSensor();
   return humidity;
 }
 
 float DHT::getTemperature()
 {
-  readSensor();
   return temperature;
 }
 

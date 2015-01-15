@@ -78,9 +78,10 @@ public:
 
   static float toFahrenheit(float fromCelcius) { return 1.8 * fromCelcius + 32.0; };
   static float toCelsius(float fromFahrenheit) { return (fromFahrenheit - 32.0) / 1.8; };
+  
+  void readSensor();
 
 protected:
-  void readSensor();
 
   float temperature;
   float humidity;
